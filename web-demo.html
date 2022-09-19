@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息收集表</title>
+</head>
+<body> 
+        <table border="1">
+            <tr>
+                <th colspan="2">信&emsp;息&emsp;统&emsp;计&emsp;表</th>
+            </tr>
+            <tr>
+                <td>姓名:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>年龄:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>性别:</td>
+                <td>
+                    <form>
+                    <input type="radio" name="sex" value="nan" id="male"><label for="male">男</label>
+                    <input type="radio" name="sex" value="nv" id="female"><label for="female">女</label>
+                </form>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>爱好:</td>
+                <td>
+                    <input type="checkbox" name="love" value="0" id="0"><label for="0">旅游</label>
+                    <br>
+                    <input type="checkbox" name="love" value="1" id="1"><label for="1">登山</label>
+                    <br>
+                    <input type="checkbox" name="love" value="2" id="2"><label for="2">健身</label>
+                    <br>
+                    <input type="checkbox" name="love" value="3" id="3"><label for="3">上网</label>
+                    <br>
+                    <input type="checkbox" name="love" value="4" id="4"><label for="4">游泳</label>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>学历:</td>
+                <td>
+                    <select name="degree" class="xiaogong">
+                        <option value="">--请选择--</option>
+                        <option value="1">专科</option>
+                        <option value="2">本科</option>
+                        <option value="3">硕士</option>
+                        <option value="4">博士及以上</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>自我介绍:</td>
+                <td>
+                    <textarea name="comment" rows="5" cols="30">自我介绍</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td  style="text-align:center">
+                    <input type="submit" value="提交">
+                    <input type="reset" value="重置">
+                </td>
+            </tr>
+    
+        </table>
+</body>
+</html>
