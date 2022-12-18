@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="box">
+        <form action="https://www.jq22.com/jquery/jquery.html" method="get">
+            <h2>小龚数据的校验</h2>
+            <p><span>用户登记名：</span><input type="text" value="小企鹅" disabled="" readonly="readonly">(不能修改，只能查看)</p>
+            <p><span>真实姓名：</span><input type="text" pattern="^[\u4e00-\  u9fa5]{0,}$" placeholder="例如：张三" required="required" autofocus="autofocus">(必须填写，只能输入汉字)</p>
+            <p><span>真实年龄：</span><input type="number" value="20" min="15" max="120" required="required"></p>
+            <p><span>出生日期：</span><input type="data" value="2000-05-23" required="required"></p>
+            <p><span>性别：</span>    <form>
+                    <input type="radio" name="people" id="male">
+                    <label for="male">男士</label>
+                    <input type="radio" name="people" id="female">
+                    <label for="female">女士</label>
+        </form></p>
+        <p><span>血型：</span>
+            <input type="radio" name="blood" >O
+            <input type="radio" name="blood" >A
+            <input type="radio" name="blood" >B
+            <input type="radio" name="blood" >AB
+</p>
+        <p><span>爱好：</span>
+            <input type="checkbox">热情大方</label>
+            <input type="checkbox">温柔体贴</label>
+            <input type="checkbox">多愁善感</label></p>
+        <p><span>简介：</span><textarea name="comment" rows="3" cols="20">请输入您的个人简介......</textarea></p>
+        <p><span>文件：</span><input type="file" value="浏览文件"></p>
+        
+            <p><span>电子邮箱：</span><input type="email" placeholder="1839885715@qq.com" required="required" multiple="multiple"></p>
+            <p><span>身份证号：</span><input type="text" required="required" pattern="^\d{8,18}|[0-9x]{8,18}|[0-9X]{8,18}?$">(必须填写,能够以数字/字母x结尾的短身份证号)</p>
+            <p><span>个人主页：</span><input type="url" list="aaa" placeholder="https://www.baidu.com" pattern="^http://([\w-]+\.)+[\w-]+(/[\w-./?%&amp;=]*)?$">(请选择网址)
+                <datalist id="aaa">
+                    <option>http://www.baidu.com</option>
+                    <option>http://www.qq.com</option>
+                  </datalist>
+            </p>
+            <p><span>城市：</span><select>
+                <option>成都市</option>
+                <option>广元市</option>
+                <option>巴中市</option>
+                <option>南充市</option>
+                <option>宜宾市</option>
+            </select></p>
+            
+            <p class="one"><span>幸运颜色：</span><input type="color" value="#8e44ad"></p>
+            <p class="two">
+                <input type="submit">
+                <input type="reset">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
